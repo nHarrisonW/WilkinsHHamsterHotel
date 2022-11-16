@@ -178,25 +178,71 @@
     display: flex;
     flex-direction: column;
 }
-.amenitiesText {
+.img9{
+    margin-top: 200px;
+    
+}
+.headertxt7{
+    text-align: center;
+    margin-top: -500px;
+    color: #FFFFFF;
+    font: normal normal normal 35px/44px Dosis;
+}
+.paragraph6{
+    font: normal normal normal 16px/20px Source Sans Pro;
+    margin-top: 25px;
+}
+.movelogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: -60px;
+}
+.txt1{
+    font: normal normal bold 20px/25px Source Sans Pro;
+    color: #FFFFFF;
+    text-align: center;
+    /* margin-left: -1050px;
+    margin-top: 30px; */
+}
+.txt2{
+    font: normal normal bold 20px/25px Source Sans Pro;
+    color: #FFFFFF;
+    text-align: center;
+    /* margin-left: -450px;
+    margin-top: -40px; */
+}
+.txt3{
+    font: normal normal bold 20px/25px Source Sans Pro;
+    color: #FFFFFF;
+    text-align: center;
+    /* margin-left: 360px;
+    margin-top: -40px; */
+}
+.txt4{
+    font: normal normal bold 20px/25px Source Sans Pro;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: space-evenly;
+    /* margin-left: 1160px;
+    margin-top: -40px; */
+}
+.spaces {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* #AmenitiesText {
     display: flex;
     justify-content: center;
     color: #FFFFFF;
-    top: 2987px;
-    left: 892px;
-    width: 133px;
-    height: 44px;
-    /* text-align: left; */
     font: normal normal normal 35px/44px Dosis;
     letter-spacing: 0px;
     opacity: 1;
 }
-.amenitiesMoreText {
-    top: 3048px;
-    left: 551px;
-    width: 808px;
-    height: 20px;
-    text-align: center;
+#AmenitiesMoreText {
     font: normal normal normal 16px/20px Source Sans Pro;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -209,5 +255,16 @@
     background-position: center;
     display: flex;
     height: 500px;
-    /* justify-content: center; */
+    justify-content: center;
+} */
+#ReserveRoomBox {
+    justify-content: center;
+    background-color: #000324;
+    display: flex;
+
+}
+#ReservePic {
+    background-image: url(../ASSETS/hamsterreserve.jpg);
+    background-size: cover;
+    justify-content: center;
 }
