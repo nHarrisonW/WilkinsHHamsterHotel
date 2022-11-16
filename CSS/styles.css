@@ -12,7 +12,7 @@
         .navbar-top .navbar-text {
             color: white;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 #headerPic {
     background-image: url(../ASSETS/header.jpg);
@@ -21,13 +21,11 @@
     background-position: center;
     display: flex;
     height: 500px;
-    
-    /* width: 100%;
-    height: 100%; */
 }
 .wheelOfLuxury {
 
     background: #000324 0% 0% no-repeat padding-box;
+    padding: 4rem;
     opacity: 0.8;
     color: white;
     flex-direction: column;
@@ -35,16 +33,16 @@
     justify-content: center;
     align-self: center;
     text-align: center;
-    /* display: flex; */
+    margin-left: 400px;
 }
 .paradiseBox {
     align-content: space-between;
     align-items: flex-end;
     display: flexbox;
     margin: 392px;
-
 }
 #paradiseHome {
+    background-image: url(../ASSETS/hamsterhomejpg.jpg);
     justify-content: end;
     width: 369px;
     height: 416px;
@@ -55,10 +53,60 @@
     align-items: flex-end;
     
 }
-#OurRoomsCards {
-    justify-content: center;
-    align-content: space-between;
+.transparentPics {
+    background-repeat: no-repeat;
+    
+    margin-left: 5cm;
     display: flex;
+}
+#FinestQuality {
+    top: 962px;
+    left: 776px;
+    width: 200px;
+    height: 153px;
+    background: transparent url(../ASSETS/awardfinest.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#Satisfaction {
+    top: 931px;
+    left: 1052px;
+    width: 200px;
+    height: 193px;
+    background: transparent url(../ASSETS/awardsatisfaction.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#Genuine {
+    top: 962px;
+    left: 776px;
+    width: 200px;
+    height: 153px;
+    background: transparent url(../ASSETS/awardgenuine.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#OurRoomsCards {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    margin: 3rem;
+    
+}
+#OurRoomsBG {
+    background-image: url(../ASSETS/bg2.jpg);
+    top: 1235px;
+    left: 0px;
+    width: 1920px;
+    height: 738px;
+    opacity: 1;
+    display: flex;
+}
+#OurRoomsText{
+    text-align: center;
+    font: normal normal normal 35px/44px Dosis;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
 }
 .card-title {
     text-align: left;
@@ -69,11 +117,97 @@
 }
 .card-body {
     text-align: left;
-    font: normal normal normal 16px/20px Dosis;
+    
+}
+.card-text {
+    font: normal normal bold 16px/20px Source Sans Pro;;
     letter-spacing: 0px;
     color: #1A1B26;
     opacity: 1;
 }
-.card {
+.packagesText {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.packagesTitle {
+    justify-content: center;
+    display: flex;
+}
+#WeddingPic {
+    margin-left: 200px;
+    background-image: url(../ASSETS/hamsterwedding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2143px;
+    left: 390px;
+    width: 561px;
+    height: 234px;
+    opacity: 1;
+}
+#FullBloomPic {
+    margin-left: 800px;
+    margin-top: -200px;
+    background-image: url(../ASSETS/hamsterspring.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2378px;
+    left: 966px;
+    width: 561px;
+    height: 234px;
+    opacity: 1;
+}
+.fullBloomText {
+    justify-content: center;
+    margin-left: 200px;
     
+}
+#SeedPic {
+    margin-left: 200px;
+    background-image: url(../ASSETS/hamstercheese.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2613px;
+    left: 390px;
+    width: 561px;
+    height: 234px;
+    opacity: 1;
+}
+.seedText {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.amenitiesText {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    top: 2987px;
+    left: 892px;
+    width: 133px;
+    height: 44px;
+    /* text-align: left; */
+    font: normal normal normal 35px/44px Dosis;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.amenitiesMoreText {
+    top: 3048px;
+    left: 551px;
+    width: 808px;
+    height: 20px;
+    text-align: center;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+#AmenitiesBG {
+    background-image: url(../ASSETS/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    height: 500px;
+    /* justify-content: center; */
 }
