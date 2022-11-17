@@ -1,27 +1,39 @@
+
 #Logo {
     background-image: url(../ASSETS/Logo.png);
     background-position: center;
 }
+#NavbarTop {
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: flex-end;
+}
+
 .navbar-blue {
     background-color: rgb(0, 4, 122)
 }
+
 .navbar-top {
     background-color: black;
 }
+
 .navbar-top .navbar-brand,
-        .navbar-top .navbar-text {
-            color: white;
-            display: flex;
-            justify-content: space-between;
-        }
+.navbar-top .navbar-text {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
 #headerPic {
     background-image: url(../ASSETS/header.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     display: flex;
     height: 500px;
 }
+
 .wheelOfLuxury {
 
     background: #000324 0% 0% no-repeat padding-box;
@@ -35,12 +47,14 @@
     text-align: center;
     margin-left: 400px;
 }
+
 .paradiseBox {
     align-content: space-between;
     align-items: flex-end;
     display: flexbox;
     margin: 392px;
 }
+
 #paradiseHome {
     background-image: url(../ASSETS/hamsterhomejpg.jpg);
     justify-content: end;
@@ -49,16 +63,21 @@
     opacity: 1;
     /* background-position: center; */
 }
+
 .paradiseText {
     align-items: flex-end;
     
 }
+
 .transparentPics {
     background-repeat: no-repeat;
-    
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
     margin-left: 5cm;
     display: flex;
 }
+
 #FinestQuality {
     top: 962px;
     left: 776px;
@@ -67,6 +86,7 @@
     background: transparent url(../ASSETS/awardfinest.png) 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
 #Satisfaction {
     top: 931px;
     left: 1052px;
@@ -75,6 +95,7 @@
     background: transparent url(../ASSETS/awardsatisfaction.png) 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
 #Genuine {
     top: 962px;
     left: 776px;
@@ -83,13 +104,15 @@
     background: transparent url(../ASSETS/awardgenuine.png) 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
 #OurRoomsCards {
     display: flex;
     justify-content: center;
     /* align-content: center; */
     margin: 3rem;
-    
+    flex-direction: row;
 }
+
 #OurRoomsBG {
     background-image: url(../ASSETS/bg2.jpg);
     top: 1235px;
@@ -99,7 +122,8 @@
     opacity: 1;
     display: flex;
 }
-#OurRoomsText{
+
+#OurRoomsText {
     text-align: center;
     font: normal normal normal 35px/44px Dosis;
     letter-spacing: 0px;
@@ -108,6 +132,7 @@
     display: flex;
     justify-content: center;
 }
+
 .card-title {
     text-align: left;
     font: normal normal normal 25px/32px Dosis;
@@ -115,25 +140,32 @@
     color: #1A1B26;
     opacity: 1;
 }
+
 .card-body {
     text-align: left;
-    
+
 }
+
 .card-text {
-    font: normal normal bold 16px/20px Source Sans Pro;;
+    font: normal normal bold 16px/20px Source Sans Pro;
+    ;
     letter-spacing: 0px;
     color: #1A1B26;
     opacity: 1;
 }
+
 .packagesText {
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
+
 .packagesTitle {
     justify-content: center;
     display: flex;
+    padding-bottom: 2%;
 }
+
 #WeddingPic {
     margin-left: 200px;
     background-image: url(../ASSETS/hamsterwedding.jpg);
@@ -145,6 +177,7 @@
     height: 234px;
     opacity: 1;
 }
+
 #FullBloomPic {
     margin-left: 800px;
     margin-top: -200px;
@@ -157,11 +190,13 @@
     height: 234px;
     opacity: 1;
 }
+
 .fullBloomText {
     justify-content: center;
     margin-left: 200px;
-    
+
 }
+
 #SeedPic {
     margin-left: 200px;
     background-image: url(../ASSETS/hamstercheese.jpg);
@@ -173,54 +208,79 @@
     height: 234px;
     opacity: 1;
 }
+
 .seedText {
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.img9{
-    margin-top: 200px;
-    
-}
-.headertxt7{
+#Amenities {
+    background-image: url("../Assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    margin-top: -500px;
-    color: #FFFFFF;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-bottom: 8%;
+  }
+  
+  #AmenitiesTitle {
     font: normal normal normal 35px/44px Dosis;
-}
-.paragraph6{
-    font: normal normal normal 16px/20px Source Sans Pro;
-    margin-top: 25px;
-}
-.movelogo{
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
     display: flex;
-    align-items: center;
+    justify-content: center;
+  }
+  
+  #AmenitiesText {
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #AmenitiesIcons {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
-    margin-left: -60px;
-}
-.txt1{
-    font: normal normal bold 20px/25px Source Sans Pro;
-    color: #FFFFFF;
     text-align: center;
-    /* margin-left: -1050px;
-    margin-top: 30px; */
-}
-.txt2{
+  }
+  
+  #AmenitiesIconText {
+    margin-left: 5%;
+    margin-right: 5%;
+    font: normal normal bold 20px/25px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+  }
+
+.txt2 {
     font: normal normal bold 20px/25px Source Sans Pro;
     color: #FFFFFF;
     text-align: center;
     /* margin-left: -450px;
     margin-top: -40px; */
 }
-.txt3{
+
+.txt3 {
     font: normal normal bold 20px/25px Source Sans Pro;
     color: #FFFFFF;
     text-align: center;
     /* margin-left: 360px;
     margin-top: -40px; */
 }
-.txt4{
+
+.txt4 {
     font: normal normal bold 20px/25px Source Sans Pro;
     color: #FFFFFF;
     text-align: center;
@@ -228,43 +288,91 @@
     /* margin-left: 1160px;
     margin-top: -40px; */
 }
+
 .spaces {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+} 
+
+#ReserveARoom {
+    background-image: url("../Assets/hamsterreserve.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    padding-bottom: 30%;
 }
 
-/* #AmenitiesText {
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
+#ReserveARoomUpper {
+    background-color: #000324;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ReserveARoomTitle {
     font: normal normal normal 35px/44px Dosis;
     letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    text-align: center;
+}
+
+#ReserveRow {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ReserveBar {
+    border-radius: 0;
+    height: 30px;
+    width: 150px;
+}
+
+.ReserveButton {
+    text-align: center;
+    font: normal normal bold 15px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    border-radius: 0;
+    height: 30px;
+    width: 150px;
+}
+
+.ReserveLabel {
+    text-align: left;
+    font: normal normal normal 15px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #E5FEFF;
     opacity: 1;
 }
-#AmenitiesMoreText {
+
+
+#Footer {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    background-color: #000324;
+    text-align: center;
+}
+
+#Address {
     font: normal normal normal 16px/20px Source Sans Pro;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #e5feff;
     opacity: 1;
 }
-#AmenitiesBG {
-    background-image: url(../ASSETS/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    display: flex;
-    height: 500px;
-    justify-content: center;
-} */
-#ReserveRoomBox {
-    justify-content: center;
-    background-color: #000324;
-    display: flex;
 
-}
-#ReservePic {
-    background-image: url(../ASSETS/hamsterreserve.jpg);
-    background-size: cover;
-    justify-content: center;
+#Trademark {
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #e5feff;
+    opacity: 1;
 }

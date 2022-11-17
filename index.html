@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hamster Hotel</title>
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Source+Sans+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-top">
-        <div class="container-fluid">
+        <div class="container-fluid" id="NavbarTop">
             <a class="navbar-brand" href="#">Navbar</a>
             <a class="navbar-brand" href="#">Other</a>
             <a class="navbar-brand" href="#">Another</a>
@@ -35,13 +39,12 @@
     </div>
     <br>
     <!-- hamster paradise start -->
-    <div class="row">
-        <!-- hamster snowpea pic -->
-        <div class="col-4" id="paradiseHome">
+    <div class="row col-12" style="justify-content: center;">
+        <div class="col-3" id="paradiseHome">
             <img src="..." alt="Hamster and a snowpea">
         </div>
 
-        <div class="col-8 paradiseText">
+        <div class="col-6 paradiseText">
             <h4>Welcome to a hamster's paradise</h4>
             <p>Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small
                 mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a relaxing spa, and a
@@ -51,19 +54,17 @@
                 with our unmatched luxury. Discover the satisfaction of indulging in our quality rooms, and thank you
                 for choosing La Petite Maison</p>
             <!-- transparent pics of awards -->
-            <div class="transparentPics">
-                <i id="FinestQuality"><img src="./ASSETS/awardfinest.png" alt="..."></i>
-                <i id="Satisfaction"><img src="./ASSETS/awardsatisfaction.png" alt="..."></i>
-                <i id="Genuine"><img src="./ASSETS/awardgenuine.png" alt="..."></i>
-            </div>
+                <i class="tranparentPics" id="FinestQuality"><img src="./ASSETS/awardfinest.png" alt="..."></i>
+                <i class="tranparentPics" id="Satisfaction" style="margin-left: 5%; margin-right: 5%;"><img src="./ASSETS/awardsatisfaction.png" alt="..."></i>
+                <i class="tranparentPics" id="Genuine"><img src="./ASSETS/awardgenuine.png" alt="..."></i>      
         </div>
     </div>
     <!-- our rooms start -->
     <div class="container text-center" id="OurRoomsCards">
-        <div class="row" id="OurRoomsBG">
+        <div class="row" style="justify-content: center;" id="OurRoomsBG">
             <b id="OurRoomsText">Our Rooms</b>
             <!-- Queen room card -->
-            <div class="col">
+            <div class="col-3">
                 <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -77,7 +78,7 @@
                 </div>
             </div>
             <!-- King Room Card -->
-            <div class="col">
+            <div class="col-3">
                 <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -91,7 +92,7 @@
                 </div>
             </div>
             <!-- Beach side suite card -->
-            <div class="col">
+            <div class="col-3">
                 <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -141,7 +142,7 @@
             </div>
         </div>
         <br>
-        <div class="row">
+        <div class="row" style="margin-bottom: 5%;">
             <div class="col-5" id="SeedPic">
                 <img src="..." alt="...">
             </div>
@@ -158,58 +159,136 @@
     <!-- end of the packages -->
 
     <!-- Amenities! -->
-    <div class="img9">
+    <div class="container-fluid" id="Amenities">
+        <div class="row">
+            <div id="AmenitiesTitle" class="col-12">
+                <h1>Amenities</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="AmenitiesText" class="col-12">
+                <p>Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the most
+                    relaxing stay
+                    we can provide.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="AmenitiesIcons" class="row">
+            <div class="col-3">
+                <img src="./Assets/24hour.png" alt="24Hr" width="150px" height="101px">
+            </div>
+            <div class="col-3">
+                <img src="./Assets/breakfast.png" alt="breakfast" width="150px" height="104px">
+            </div>
+            <div class="col-3">
+                <img src="./Assets/valet.png" alt="valet" width="100px" height="115px">
+            </div>
+            <div class="col-3">
+                <img src="./Assets/pool.png" alt="pool" width="155px" height="110px">
+            </div>
+
+        </div>
+        <div id="AmenitiesIconText" class="row">
+            <div class="col-3">
+                <p>24 Hour Room Service</p>
+            </div>
+            <div class="col-3">
+                <p>Complimentary Breakfast</p>
+            </div>
+            <div class="col-3">
+                <p>Valet Parking</p>
+            </div>
+            <div class="col-3">
+                <p>Beachside Pool</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="img9">
         <img src="./Assets/bg.jpg" alt="">
-      </div>
-      <div class="headertxt7">
+    </div>
+    <div class="headertxt7">
         <h1 class="heading6">Amenities</h1>
-        <p class="paragraph6">Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the most relaxing stay we can provide.</p>
-      </div>
-      <div class="movelogo">
+        <p class="paragraph6">Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the
+            most relaxing stay we can provide.</p>
+    </div>
+    <div class="movelogo">
         <img class="col-1" src="./ASSETS/24hour.png" alt="">
         <img class="col-1" src="./Assets/breakfast.png" alt="">
         <img class="col-1" src="./Assets/valet.png" alt="">
         <img class="col-1" src="./Assets/pool.png" alt="">
-      </div>
-      <div class="spaces">
-          <div class="txt1">
+    </div>
+    <div class="spaces">
+        <div class="txt1">
             <p class="col-3">24 Hour Room Service</p>
-          </div>
-          <div class="txt2">
+        </div>
+        <div class="txt2">
             <p class="col-3">Complimentary Breakfast</p>
-          </div>
-          <div class="txt3">
+        </div>
+        <div class="txt3">
             <p class="col-3">Valet Parking</p>
-          </div>
-           <div class="txt4">
+        </div>
+        <div class="txt4">
             <p class="col-3">Beachside Pool</p>
-          </div>
-
-      </div>
-    
+        </div>
+    </div> -->
+    <!-- End of Amenities -->
 
     <!-- Reserve a room! -->
-    <div class="container-fluid" id="ReserveRoomBox">
-        <!-- <p class="col-3">bruh</p> -->
-        <form class="d-flex col-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <form class="d-flex col-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <form class="d-flex col-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <form class="d-flex col-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Check Availability</a>
-          <div id="ReservePic">
-            <img src="./ASSETS/hamsterreserve.jpg" alt="...">
-          </div>
-          
+    <div id="ReserveARoom">
+        <div id="ReserveARoomUpper">
+            <h1 id="ReserveARoomTitle">Room a Room</h1>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <p class="ReserveLabel">Check In</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Check out</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Number of Guests</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Room Type</p>
+                </div>
+                <div class="col-2">
+                    <p> </p>
+                </div>
+            </div>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- End reserve a room! -->
 
+
+    <!-- Footer (ENDING)! -->
+    <div id="Footer">
+        <img src="./Assets/Logo.png" alt="Logo" width="143" height="100">
+        <br>
+        <br>
+        <h2 id="Address">123 Sunflower Seed Rd., Cavia, California 95205</h2>
+        <br>
+        <h2 id="Trademark">©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.</h2>
+    </div>
+    <!-- End of Footer -->
+    <!-- End of Website -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
