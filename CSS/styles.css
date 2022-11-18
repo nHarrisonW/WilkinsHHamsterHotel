@@ -1,3 +1,6 @@
+
+
+
 #Logo {
     background-image: url(../ASSETS/Logo.png);
     background-position: center;
@@ -32,10 +35,11 @@
 #headerPic {
     background-image: url(../ASSETS/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     display: flex;
     height: 500px;
+    padding: 0;
 }
 
 .wheelOfLuxury {
@@ -123,12 +127,12 @@
 
 #OurRoomsBG {
     background-image: url(../ASSETS/bg2.jpg);
-    top: 1235px;
-    left: 0px;
-    width: 1920px;
-    height: 738px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 1;
     display: flex;
+    justify-content: center;
 }
 
 #OurRoomsText {
@@ -396,11 +400,22 @@
 }
 
 /* END Footer */
+
+/* START Fonts and responsiveness */
 #luxText {
     font: normal normal normal 16px/20px Source Sans Pro;
 }
 #luxTitle {
     font: normal normal normal 35px/44px Dosis;
+}
+#WelcomeTitle {
+    font: normal normal normal 45px/57px Dosis;
+}
+#WelcomeTexts {
+    font: normal normal normal 16px/20px Source Sans Pro;
+}
+#CardBold {
+    font: normal normal bold 16px/20px Source Sans Pro;
 }
 
 @media screen and (max-width: 991px) {
