@@ -129,7 +129,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0;
+    padding: 10px;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -530,8 +530,11 @@
     .roomColumns {
         display: flex;
         justify-content: center;
+        padding-bottom: 10px;
     }
-
+    #Logo {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1400px) {
