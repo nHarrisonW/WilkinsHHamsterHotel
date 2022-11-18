@@ -1,8 +1,8 @@
-
 #Logo {
     background-image: url(../ASSETS/Logo.png);
     background-position: center;
 }
+
 #NavbarTop {
     justify-content: space-between;
     margin-left: 15%;
@@ -24,7 +24,11 @@
     display: flex;
     justify-content: space-between;
 }
+.container-fluid {
+    padding: 0;
+}
 
+/* Start Header */
 #headerPic {
     background-image: url(../ASSETS/header.jpg);
     background-repeat: no-repeat;
@@ -37,7 +41,7 @@
 .wheelOfLuxury {
 
     background: #000324 0% 0% no-repeat padding-box;
-    padding: 4rem;
+    padding: 3rem;
     opacity: 0.8;
     color: white;
     flex-direction: column;
@@ -48,6 +52,8 @@
     margin-left: 400px;
 }
 
+/* END Header */
+/* START Paradise */
 .paradiseBox {
     align-content: space-between;
     align-items: flex-end;
@@ -66,7 +72,7 @@
 
 .paradiseText {
     align-items: flex-end;
-    
+
 }
 
 .transparentPics {
@@ -105,6 +111,8 @@
     opacity: 1;
 }
 
+/* END Paradise */
+/* START Rooms */
 #OurRoomsCards {
     display: flex;
     justify-content: center;
@@ -168,6 +176,8 @@
     font: normal normal normal 45px/57px Dosis;
 }
 
+/* END Rooms */
+/* START Packages */
 #WeddingPic {
     margin-left: 200px;
     background-image: url(../ASSETS/hamsterwedding.jpg);
@@ -216,6 +226,9 @@
     display: flex;
     flex-direction: column;
 }
+
+/* END Packages */
+/* START Amenitites */
 #Amenities {
     background-image: url("../Assets/bg.jpg");
     background-size: cover;
@@ -225,35 +238,35 @@
     padding-top: 5%;
     padding-bottom: 10%;
     margin-bottom: 8%;
-  }
-  
-  #AmenitiesTitle {
+}
+
+#AmenitiesTitle {
     font: normal normal normal 35px/44px Dosis;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
     display: flex;
     justify-content: center;
-  }
-  
-  #AmenitiesText {
+}
+
+#AmenitiesText {
     font: normal normal normal 16px/20px Source Sans Pro;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
     display: flex;
     justify-content: center;
-  }
-  
-  #AmenitiesIcons {
+}
+
+#AmenitiesIcons {
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-  }
-  
-  #AmenitiesIconText {
+}
+
+#AmenitiesIconText {
     margin-left: 5%;
     margin-right: 5%;
     font: normal normal bold 20px/25px Source Sans Pro;
@@ -264,7 +277,7 @@
     justify-content: space-evenly;
     text-align: center;
     position: relative;
-  }
+}
 
 .txt2 {
     font: normal normal bold 20px/25px Source Sans Pro;
@@ -296,8 +309,10 @@
     align-items: center;
     justify-content: space-evenly;
 
-} 
+}
 
+/* END Amenitites */
+/* START Room Reserve */
 #ReserveARoom {
     background-image: url("../Assets/hamsterreserve.jpg");
     background-size: cover;
@@ -357,7 +372,8 @@
     opacity: 1;
 }
 
-
+/* END Room Reserve */
+/* START Footer */
 #Footer {
     padding-top: 2%;
     padding-bottom: 4%;
@@ -377,4 +393,23 @@
     letter-spacing: 0px;
     color: #e5feff;
     opacity: 1;
+}
+
+/* END Footer */
+#luxText {
+    font: normal normal normal 16px/20px Source Sans Pro;
+}
+#luxTitle {
+    font: normal normal normal 35px/44px Dosis;
+}
+
+@media screen and (max-width: 991px) {
+    #luxText {
+    font: normal normal normal 10px Source Sans Pro;
+
+    }
+    #luxTitle {
+    font: normal normal normal 25px Dosis;
+
+    }
 }
