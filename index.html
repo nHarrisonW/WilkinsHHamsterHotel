@@ -15,24 +15,49 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-top" style="font: normal normal normal 20px/26px Dosis;">
-        <div class="container-fluid" id="NavbarTop">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <a class="navbar-brand" href="#">Other</a>
-            <a class="navbar-brand" href="#">Another</a>
-            <img src="./ASSETS/Logo.png" alt="Logo">
-            <a class="navbar-brand" href="#">Whichever</a>
-            <a class="navbar-brand" href="#">Whoever</a>
-            <a class="navbar-brand" href="#">One More</a>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navBG">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav navWord">
+              <li class="nav-item">
+                <a class="nav-link active navWord" style="color: white;"aria-current="page" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navWord" style="color: white;"href="#">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navWord" style="color: white;" href="#">Packages</a>
+              </li>
+              <li>
+                <img src="./ASSETS/Logo.png" alt="">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navWord" style="color: white;">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navWord" style="color: white;">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navWord" style="color: white;">Reserve</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-            <div id="headerPic">
-                <img src="..." alt="Alt stuff">
-                <div class="wheelOfLuxury">
-                    <h1 id="luxTitle">Run on the Wheel of Luxury</h1>
-                    <p id="luxText">Explore everything our beach has to offer in our relaxing resort.</p>
-                </div>
-            </div>
+      </nav>
+
+    <!-- Header -->
+    <div id="headerPic">
+        <img src="..." alt="Alt stuff">
+        <div class="wheelOfLuxury col-xl-5">
+            <h1 id="luxTitle">Run on the Wheel of Luxury</h1>
+            <p id="luxText">Explore everything our beach has to offer in our relaxing resort.</p>
+        </div>
+    </div>
     <br>
     <!-- hamster paradise start -->
     <div class="row col-12" style="justify-content: center;">
@@ -40,30 +65,33 @@
             <img src="..." alt="Hamster and a snowpea">
         </div>
 
-        <div class="col-6 paradiseText" style="margin-bottom: 50px;">
+        <div class="col-lg-6 col-md-12 paradiseText" style="margin-bottom: 50px; text-align: center;">
             <h4 id="WelcomeTitle">Welcome to a hamster's paradise</h4>
-            <p id="WelcomeTexts">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small
+            <p id="WelcomeTexts">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed
+                for the small
                 mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a relaxing spa, and a
                 pool with a beach side view.</p>
 
-            <p id="WelcomeTexts">Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich accommodations along
+            <p id="WelcomeTexts">Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich
+                accommodations along
                 with our unmatched luxury. Discover the satisfaction of indulging in our quality rooms, and thank you
                 for choosing La Petite Maison</p>
             <!-- transparent pics of awards -->
-                <i class="tranparentPics" id="FinestQuality"><img src="./ASSETS/awardfinest.png" alt="..."></i>
-                <i class="tranparentPics" id="Satisfaction" style="margin-left: 5%; margin-right: 5%;"><img src="./ASSETS/awardsatisfaction.png" alt="..."></i>
-                <i class="tranparentPics" id="Genuine"><img src="./ASSETS/awardgenuine.png" alt="..."></i>      
+            <i class="tranparentPics" id="FinestQuality"><img src="./ASSETS/awardfinest.png" alt="..."></i>
+            <i class="tranparentPics" id="Satisfaction" style="margin-left: 5%; margin-right: 5%;"><img
+                    src="./ASSETS/awardsatisfaction.png" alt="..."></i>
+            <i class="tranparentPics" id="Genuine"><img src="./ASSETS/awardgenuine.png" alt="..."></i>
         </div>
     </div>
     <!-- our rooms start -->
-    <div class="container text-center" >
+    <div class="container-fluid">
         <div class="row" id="OurRoomsBG">
             <b id="OurRoomsText">Our Rooms</b>
             <!-- Queen room card -->
-            <div class="col-3">
-                <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
+            <div class="col-lg-3 row-cols-md-12 roomColumns" id="Rooms">
+                <div class="card" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" id="Rooms">
                         <h5 class="card-title">Queen Room</h5>
                         <p id="CardBold">850 SQ FT room with city view</p>
                         <p class="card-text">• One queen size bed</p>
@@ -74,8 +102,8 @@
                 </div>
             </div>
             <!-- King Room Card -->
-            <div class="col-3">
-                <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
+            <div class="col-lg-3 row-cols-md-12 roomColumns">
+                <div class="card" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">King Room</h5>
@@ -88,8 +116,8 @@
                 </div>
             </div>
             <!-- Beach side suite card -->
-            <div class="col-3">
-                <div class="card" id="Rooms" style="width: 18rem; height: 32rem;">
+            <div class="col-lg-3 row-cols-md-12 roomColumns">
+                <div class="card" style="width: 18rem; height: 32rem;">
                     <img src="./ASSETS/room2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Beach Side Suite</h5>
@@ -106,43 +134,53 @@
     </div>
     <!-- END OF ROOMS CARDS -->
     <br>
+
+    <!-- START Packages -->
     <div class="container-fluid">
         <div class="row">
             <h1 class="packagesTitle">Packages</h1>
         </div>
-        <div class="row">
-            <div class="col-5" id="WeddingPic">
+        <div class="row" style="justify-content: center;">
+            <div class="col-xl-5" id="WeddingPic">
                 <img src="..." alt="...">
             </div>
-            <div class="col-5 packagesText">
+            <div class="col-xl-5 packagesText">
                 <h1 style="font: normal normal normal 45px/57px Dosis;">Beach Wedding package</h1>
                 <a href="#" style="text-decoration:none">Starting at US $1500.00</a>
                 <p> </p>
-                <p>Feel the warmth of the beach as the flames in your hearts ignite during our romantic beach side wedding. All wedding packages include catering, an open bar, and one tier wedding cake (9" Vanilla standard cake). A private dinner for your closets family members and friends will be provided after the ceremony.</p>
+                <p>Feel the warmth of the beach as the flames in your hearts ignite during our romantic beach side
+                    wedding. All wedding packages include catering, an open bar, and one tier wedding cake (9" Vanilla
+                    standard cake). A private dinner for your closets family members and friends will be provided after
+                    the ceremony.</p>
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-5 fullBloomText">
+        <div class="row" style="justify-content: center;">
+            <div class="col-xl-5 fullBloomText">
                 <h1 style="font: normal normal normal 45px/57px Dosis;">Full Bloom package</h1>
                 <a href="#" style="text-decoration:none">Starting at US $1000.00</a>
                 <p> </p>
-                <p>Enjoy the shade of our cherry trees as you join us during our spring time celebration. We invite you to our orchards for cherry, strawberry, and apple picking that is open all day. We end each evening with fresh, vegetable centric dinners along with a live show from local musicians.</p>
+                <p>Enjoy the shade of our cherry trees as you join us during our spring time celebration. We invite you
+                    to our orchards for cherry, strawberry, and apple picking that is open all day. We end each evening
+                    with fresh, vegetable centric dinners along with a live show from local musicians.</p>
             </div>
-            <div class="col-5" id="FullBloomPic">
+            <div class="col-xl-5" id="FullBloomPic">
                 <img src="..." alt="...">
             </div>
         </div>
         <br>
-        <div class="row" style="margin-bottom: 5%;">
+        <div class="row" style="margin-bottom: 5%; justify-content: center;">
             <div class="col-5" id="SeedPic">
                 <img src="..." alt="...">
             </div>
-            <div class="col-5 seedText">
+            <div class="col-xl-5 seedText">
                 <h1 style="font: normal normal normal 45px/57px Dosis;">Cheese and Seed Tour package</h1>
                 <a href="#" style="text-decoration:none">Starting at US $1200.00</a>
                 <p> </p>
-                <p>Immerse yourself in the flavors of Cavia with our Cheese and Seed tour. We consulted with connoisseurs from around the globe to bring you the best flavors that nature has to offer, and create our cheeses right here at our local creamery. Cheese and seeds are served all day and nightly spa treatment is provided after dinner.</p>
+                <p>Immerse yourself in the flavors of Cavia with our Cheese and Seed tour. We consulted with
+                    connoisseurs from around the globe to bring you the best flavors that nature has to offer, and
+                    create our cheeses right here at our local creamery. Cheese and seeds are served all day and nightly
+                    spa treatment is provided after dinner.</p>
             </div>
         </div>
     </div>
@@ -200,39 +238,39 @@
     <!-- Reserve a room! -->
     <div id="ReserveARoom">
         <div id="ReserveARoomUpper">
-            <h1 id="ReserveARoomTitle">Room a Room</h1>
+            <h1 id="ReserveARoomTitle">Reserve a Room</h1>
             <div id="ReserveRow" class="row">
-                <div class="col-2">
-                    <p class="ReserveLabel">Check In</p>
-                </div>
-                <div class="col-2">
-                    <p class="ReserveLabel">Check out</p>
-                </div>
-                <div class="col-2">
-                    <p class="ReserveLabel">Number of Guests</p>
-                </div>
-                <div class="col-2">
-                    <p class="ReserveLabel">Room Type</p>
-                </div>
                 <div class="col-2">
                     <p> </p>
                 </div>
             </div>
             <div id="ReserveRow" class="row">
-                <div class="col-2">
+                <div class="col-xl-2">
+                    <div class="col-2">
+                        <p class="ReserveLabel">Check In</p>
+                    </div>
                     <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2">
+                    <div class="col-2">
+                        <p class="ReserveLabel">Check out</p>
+                    </div>
                     <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2">
+                    <div class="col-2">
+                        <p class="ReserveLabel">Number of Guests</p>
+                    </div>
                     <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2">
+                    <div class="col-2">
+                        <p class="ReserveLabel">Room Type</p>
+                    </div>
                     <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
                 </div>
-                <div class="col-2">
-                    <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
+                <div class="col-xl-2">
+                    <button class="btn btn-primary ReserveButton" type="submit" id="Check">Check Availability</button>
                 </div>
             </div>
         </div>

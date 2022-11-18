@@ -1,6 +1,3 @@
-
-
-
 #Logo {
     background-image: url(../ASSETS/Logo.png);
     background-position: center;
@@ -13,13 +10,18 @@
     align-items: flex-end;
 }
 
-.navbar-blue {
-    background-color: rgb(0, 4, 122)
+
+.navBG {
+    background-color:#000324;
+    font: normal normal normal 20px/26px Dosis;
+}
+.navWord {
+   color: white; 
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
 }
 
-.navbar-top {
-    background-color: black;
-}
 
 .navbar-top .navbar-brand,
 .navbar-top .navbar-text {
@@ -27,6 +29,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .container-fluid {
     padding: 0;
 }
@@ -40,20 +43,17 @@
     display: flex;
     height: 500px;
     padding: 0;
+    justify-content: center;
 }
 
 .wheelOfLuxury {
-
     background: #000324 0% 0% no-repeat padding-box;
     padding: 3rem;
     opacity: 0.8;
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: #E5FEFF;
     align-self: center;
     text-align: center;
-    margin-left: 400px;
+    /* margin-left: 400px; */
 }
 
 /* END Header */
@@ -76,7 +76,6 @@
 
 .paradiseText {
     align-items: flex-end;
-
 }
 
 .transparentPics {
@@ -120,7 +119,7 @@
 #OurRoomsCards {
     display: flex;
     justify-content: center;
-    /* align-content: center; */
+    align-content: center;
     margin: 3rem;
     flex-direction: row;
 }
@@ -130,6 +129,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -139,30 +139,30 @@
     text-align: center;
     font: normal normal normal 35px/44px Dosis;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .card-title {
     text-align: left;
     font: normal normal normal 25px/32px Dosis;
     letter-spacing: 0px;
-    color: #1A1B26;
+    color: #1a1b26;
     opacity: 1;
 }
 
 .card-body {
     text-align: left;
-
 }
 
 .card-text {
     font: normal normal normal 16px/20px Source Sans Pro;
     letter-spacing: 0px;
-    color: #1A1B26;
+    color: #1a1b26;
     opacity: 1;
 }
 
@@ -183,7 +183,7 @@
 /* END Rooms */
 /* START Packages */
 #WeddingPic {
-    margin-left: 200px;
+    /* margin-left: 200px; */
     background-image: url(../ASSETS/hamsterwedding.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,7 +194,7 @@
     opacity: 1;
 }
 
-#FullBloomPic {
+/* #FullBloomPic {
     margin-left: 800px;
     margin-top: -200px;
     background-image: url(../ASSETS/hamsterspring.jpg);
@@ -211,10 +211,27 @@
     justify-content: center;
     margin-left: 200px;
 
+} */
+#FullBloomPic {
+    /* margin-left: 200px; */
+    background-image: url(../ASSETS/hamstercheese.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2613px;
+    left: 390px;
+    width: 561px;
+    height: 234px;
+    opacity: 1;
+}
+
+.fullBloomText {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #SeedPic {
-    margin-left: 200px;
+    /* margin-left: 200px; */
     background-image: url(../ASSETS/hamstercheese.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,7 +302,7 @@
 
 .txt2 {
     font: normal normal bold 20px/25px Source Sans Pro;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     /* margin-left: -450px;
     margin-top: -40px; */
@@ -293,7 +310,7 @@
 
 .txt3 {
     font: normal normal bold 20px/25px Source Sans Pro;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     /* margin-left: 360px;
     margin-top: -40px; */
@@ -301,7 +318,7 @@
 
 .txt4 {
     font: normal normal bold 20px/25px Source Sans Pro;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     justify-content: space-evenly;
     /* margin-left: 1160px;
@@ -312,7 +329,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 /* END Amenitites */
@@ -349,6 +365,7 @@
     margin-right: 3%;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 .ReserveBar {
@@ -383,6 +400,7 @@
     padding-bottom: 4%;
     background-color: #000324;
     text-align: center;
+    background-size: 100%;
 }
 
 #Address {
@@ -405,26 +423,133 @@
 #luxText {
     font: normal normal normal 16px/20px Source Sans Pro;
 }
+
 #luxTitle {
     font: normal normal normal 35px/44px Dosis;
 }
+
 #WelcomeTitle {
     font: normal normal normal 45px/57px Dosis;
 }
+
 #WelcomeTexts {
     font: normal normal normal 16px/20px Source Sans Pro;
 }
+
 #CardBold {
     font: normal normal bold 16px/20px Source Sans Pro;
 }
 
 @media screen and (max-width: 991px) {
     #luxText {
-    font: normal normal normal 10px Source Sans Pro;
+        font: normal normal normal 10px Source Sans Pro;
+    }
+
+    #luxTitle {
+        font: normal normal normal 25px Dosis;
+    }
+
+    #headerPic {
+        display: none;
+    }
+
+    #FinestQuality {
+        display: none;
+    }
+
+    #Satisfaction {
+        display: none;
+    }
+
+    #Genuine {
+        display: none;
+    }
+
+    #FullBloomPic {
+        display: none;
+    }
+
+    #SeedPic {
+        display: none;
+    }
+
+    #Footer {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        background-color: #000324;
+        /* text-align: center; */
+        background-size: 100%;
+    }
+
+    #WeddingPic {
+        display: none;
+    }
+
+    #Address {
+        font: normal normal normal 14px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #e5feff;
+        opacity: 1;
+        text-align: center;
+    }
+
+    #Trademark {
+        font: normal normal normal 14px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #e5feff;
+        opacity: 1;
+    }
+
+    #AmenitiesIcons {
+        display: none;
+    }
+
+    #AmenitiesIconText {
+        font: normal normal bold 10px Source Sans Pro;
+        text-align: center;
+    }
+
+    #paradiseHome {
+        display: none;
+    }
+
+    #OurRoomsBG {
+        justify-content: center;
+    }
+
+    #ReserveARoom {
+        margin: 0;
+        background: none;
+        padding-bottom: 07%;
+    }
+    #Check {
+        font: normal normal normal 10px Source Sans Pro;
 
     }
-    #luxTitle {
-    font: normal normal normal 25px Dosis;
 
+    .roomColumns {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .ReserveBar {
+        height: 20px;
+        width: 100px;
+    }
+
+    .ReserveLabel {
+        position: relative;
+        top: 10px;
+    }
+
+    .ReserveButton {
+        font: normal normal bold 9px Source Sans Pro;
+        height: 20px;
+        width: 100px;
+        position: relative;
+        top: -5px;
     }
 }
